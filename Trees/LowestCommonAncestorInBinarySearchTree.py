@@ -10,8 +10,6 @@ class Solution:
         # Helper function to move to the next node based on the target value
         # Returns (next_node, direction): 0 = left, 1 = right, 2 = found
         def nxt(node, i):
-            if not node:
-                pass
             if i > node.val:
                 return (node.right, 1)
             elif i < node.val:
